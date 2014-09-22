@@ -2,7 +2,7 @@ In Rails version 3+, sketch out a new blog project with three interrelated model
 
 **Author**, **Post**, and **Comment** 
 
-The project itself needn't be supplied in detail.  Views and controller code are not necessary, so long as the model relations and the **Author.trending** method are fleshed out in accordance with the instructions below.
+The project itself needn't be supplied in detail.  Views and controller code are not necessary, so long as the model relations and the **Author.trending** scope are fleshed out in accordance with the instructions below.
 
 =================
 
@@ -28,13 +28,13 @@ Comments have a body (text), and a creation date.
 
 Each Comment is associated with only one Post.
 
-#### Author#trending
+#### Author.trending
 
-Now, with these models in mind, write an **Author#trending** method which satisfies the following: 
+Now, with these models in mind, write an **Author.trending** scope which satisfies the following: 
 
 .trending is a way of measuring which Authors have earned the most Comments in the last week.
 
-.trending returns a list of Authors, sorted (descending) by the number of total Comments left in the last 7 days on all the Author's Posts
+.trending returns Authors, sorted (descending) by the number of total Comments left in the last 7 days on all the Author's Posts
 
 .trending does not return any Authors who have garnered no Comments in the last 7 days.
 
@@ -42,11 +42,9 @@ Now, with these models in mind, write an **Author#trending** method which satisf
 
 Some considerations:
 
--- Write some basic tests for the Author#trending method.  What conditions or edge cases might you use to ensure it's working correctly?
+-- Write some basic tests for the Author.trending scope.  What conditions or edge cases might you use to ensure it's working correctly?
 
--- Can you optimize this #trending query?  How might you do this while maintaining legible Arel? 
-
--- Can you make a .trending scope for the Author model, such that further queries (Author.trending.etcetera) can be built off of it?
+-- Can you optimize this .trending query?  How might you do this while maintaining legible Arel? 
 
 =================
 
