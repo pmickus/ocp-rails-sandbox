@@ -1,11 +1,10 @@
-ocp-rails-sandbox
-=================
-
 In Rails version 3+, sketch out a new blog project with three interrelated models:  
 
-Author, Post, and Comment 
+**Author**, **Post**, and **Comment** 
 
-The project itself needn't be supplied in detail.  Views and controller code are not necessary, so long as the model relations and the Author#trending method are fleshed out in accordance with the instructions below.
+The project itself needn't be supplied in detail.  Views and controller code are not necessary, so long as the model relations and the **Author#trending** method are fleshed out in accordance with the instructions below.
+
+=================
 
 Authors write blog Posts, and their readers can leave anonymous Comments on each Post.
 
