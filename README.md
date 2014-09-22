@@ -30,7 +30,7 @@ Each Comment is associated with only one Post.
 
 #### Author#trending
 
-Now, with these models in mind, write an **Author#trending method** which satisfies the following: 
+Now, with these models in mind, write an **Author#trending** method which satisfies the following: 
 
 \#trending is a way of measuring which Authors have earned the most Comments in the last week.
 
