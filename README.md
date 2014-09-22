@@ -46,7 +46,7 @@ Some considerations:
 
 -- Can you optimize this #trending query?  How might you do this while maintaining legible Arel? 
 
--- Can you make a .trending scope for Author model, such that further queries (Authior.trending.etcetera) can be built off of it?
+-- Can you make a .trending scope for the Author model, such that further queries (Author.trending.etcetera) can be built off of it?
 
 =================
 
