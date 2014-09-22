@@ -9,13 +9,13 @@ The project itself needn't be supplied in detail.  Views and controller code are
 
 Authors write blog Posts, and their readers can leave anonymous Comments on each Post.
 
-Author.rb
+#### Author.rb
 
 Authors have a name (string).
 
 One Author can have many Posts.
 
-Post.rb
+#### Post.rb
 
 Posts have a subject (string), a body (text), and a creation date.
 
@@ -23,21 +23,21 @@ Each Post associates with only one Author.
 
 Each Post can have many Comments left on it by the internet at large.
 
-Comment.rb
+#### Comment.rb
 
 Comments have a body (text), and a creation date.
 
 Each Comment is associated with only one Post.
 
-Now, with these models in mind, write an Author#trending method which satisfies the following: 
+Now, with these models in mind, write an **Author#trending method** which satisfies the following: 
 
-#trending is a way of measuring which Authors have earned the most Comments in the last week.
+\#trending is a way of measuring which Authors have earned the most Comments in the last week.
 
-#trending returns a list of Authors, sorted (descending) by the number of total Comments left in the last 7 days on all the Author's Posts
+\#trending returns a list of Authors, sorted (descending) by the number of total Comments left in the last 7 days on all the Author's Posts
 
-#trending does not return any Authors who have garnered no Comments in the last 7 days.
+\#trending does not return any Authors who have garnered no Comments in the last 7 days.
 
-#trending doesn't care about the ages of the Posts themselves.  If a Post is more than 7 days old, but has new Comments, those Comments add to the Author's total.
+\#trending doesn't care about the ages of the Posts themselves.  If a Post is more than 7 days old, but has new Comments, those Comments add to the Author's total.
 
 Some considerations:
 
