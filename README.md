@@ -28,6 +28,8 @@ Comments have a body (text), and a creation date.
 
 Each Comment is associated with only one Post.
 
+#### Author#trending
+
 Now, with these models in mind, write an **Author#trending method** which satisfies the following: 
 
 \#trending is a way of measuring which Authors have earned the most Comments in the last week.
@@ -40,11 +42,11 @@ Now, with these models in mind, write an **Author#trending method** which satisf
 
 Some considerations:
 
-Write some basic tests for the Author#trending method.  What conditions or edge cases might you use to ensure it's working correctly?
+-- Write some basic tests for the Author#trending method.  What conditions or edge cases might you use to ensure it's working correctly?
 
-Can you optimize this #trending query?  How might you do this while maintaining legible Arel? 
+-- Can you optimize this #trending query?  How might you do this while maintaining legible Arel? 
 
-Can you make a .trending scope for Author model, such that further queries (Authior.trending.etcetera) can be built off of it?
+-- Can you make a .trending scope for Author model, such that further queries (Authior.trending.etcetera) can be built off of it?
 
 =================
 
