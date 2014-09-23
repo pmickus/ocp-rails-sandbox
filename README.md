@@ -47,5 +47,3 @@ Some considerations:
 -- Can you optimize this .trending query?  How might you do this while maintaining legible Arel? 
 
 =================
-
-Please submit your examples to a separate branch in this repository.
